@@ -17,7 +17,7 @@ public class Ejemplo7 {
 
         for (int i = 0; i < 8; i++) {
 
-            System.out.println("Introduzca el carácer " + (i + 1) + ": ");
+            System.out.println("Introduzca el carácter " + (i + 1) + ": ");
             entrada = sc.nextInt();
             decimal += entrada * valor;
             valor /= 2;
