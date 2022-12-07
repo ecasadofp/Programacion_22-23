@@ -1,4 +1,4 @@
-public class Coche {
+public class Coche implements Comparable<Coche>{
 
     private String marca;
     private String modelo;
@@ -53,6 +53,26 @@ public class Coche {
 
     public void seetMarca(String marca) {
         this.marca = marca;
+    }
+    public double getKmRecorridos(){
+
+        return this.kmRecorridos;
+
+    }
+
+    public int compareTo(Coche c){
+
+        String marca1 = this.getMarca();
+        String marca2 = c.getMarca();
+
+        return marca1.compareTo(marca2);
+
+    }
+
+    @Override
+    public String toString(){
+
+        return ("Marca: " + this.marca + ", modelo: " + this.modelo + ", kms: " + this.kmRecorridos);
     }
 
 }
