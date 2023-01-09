@@ -1,0 +1,3 @@
+public enum Regalo {
+    BICI, PELOTA, PATINETE, CONSOLA, JUEGO_DE_CARTAS
+}
